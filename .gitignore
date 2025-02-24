@@ -1,0 +1,7 @@
+*.o
+*.elf
+*.hex
+*.map
+*.siz
+*.sym
+err.txt
