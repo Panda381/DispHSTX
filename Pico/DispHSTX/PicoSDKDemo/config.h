@@ -18,8 +18,18 @@
 #define _CONFIG_H
 
 #define DISPHSTX_PICOSDK 1
-#define USE_RAND				 1
-#define USE_TEXT				 1
+#define USE_RAND	 1
+#define USE_TEXT	 1
+
+#define USE_DRAWCAN0    1
+#define USE_DRAWCAN1    1
+#define USE_DRAWCAN2    1
+#define USE_DRAWCAN3    1
+#define USE_DRAWCAN4    1
+#define USE_DRAWCAN6    1
+#define USE_DRAWCAN8    1
+#define USE_DRAWCAN12   1
+#define USE_DRAWCAN16   1
 
 // *********
 // At this place you can specify the switches and settings you want
