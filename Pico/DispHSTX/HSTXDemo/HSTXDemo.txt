@@ -1,1 +1,1 @@
-DispHSTX simple demo
+HSTXDisp driver demo

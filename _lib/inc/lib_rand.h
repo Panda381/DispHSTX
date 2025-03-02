@@ -22,8 +22,6 @@
 #ifndef _LIB_RAND_H
 #define _LIB_RAND_H
 
-//#include "../../_sdk/inc/sdk_cpu.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif

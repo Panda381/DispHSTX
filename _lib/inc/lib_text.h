@@ -21,6 +21,8 @@
 #ifndef _LIB_TEXT_H
 #define _LIB_TEXT_H
 
+#if USE_TEXT	// use Text strings, except StrLen and StrComp (lib_text.c, lib_text.h)
+
 #ifdef __cplusplus
 extern "C" {
 #endif
