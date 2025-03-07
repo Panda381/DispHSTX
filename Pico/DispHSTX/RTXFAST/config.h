@@ -25,7 +25,7 @@
 
 #define USE_DISPHSTX		1		// 1=use HSTX Display driver
 #define USE_DRAWCAN		1		// use drawing canvas (lib_drawcan*.c, lib_drawcan*.h)
-#define DISPHSTX_DVI_PINOUT	1		// DVI predefined pinout: 0=DVI breakout board, 1=order D2+..CLK-, 2=order CLK-..D2+
+//#define DISPHSTX_DVI_PINOUT	0		// DVI predefined pinout: 0=DVI breakout board, 1=order D2+..CLK-, 2=order CLK-..D2+
 //#define DISPHSTX_DISP_SEL	20		// >=0 GPIO pin with display selection switch, -1=do not use display selection switch
 
 //#define DISPHSTX_USE_VGA	1		// 1=use VGA support (0=or only DVI) ... VGA is not supported, it is too slow for this purpose

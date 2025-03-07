@@ -46,12 +46,14 @@ Schematic wiring diagram
 ------------------------
 The DVI (HDMI) and VGA connectors are connected to the same processor pins,
 GPIO 12 to GPIO 19. The selection of pins 12 to 19 is determined by the
-processor and cannot be changed. In the driver configuration there are 2
+processor and cannot be changed. In the driver configuration there are 3
 options for the pin order for the DVI (HDMI) output, but any other pin order
-can be selected after editing the code. Similarly, it is possible to select any
-pin order for the VGA connector, but it is recommended to keep the order used
-in the schematic above to allow VGA signal output from the PIO controller,
-which requires keeping the pin order.
+can be selected after editing the code. It is recommended to use the default
+configuration 0 (see schematic diagram), which is based on the wiring of the
+popular Pico DVI socket. Similarly, it is possible to select any pin order for
+the VGA connector, but it is recommended to keep the order used in the
+schematic above to allow VGA signal output from the PIO controller, which
+requires keeping the pin order.
 
 The 400 and 800 ohm resistors used for the VGA output should be used within a
 1% tolerance. If necessary, close values such as 390 and 820 ohms can be used,
