@@ -1086,7 +1086,7 @@ void DispHstxSelDispMode(int dispmode, sDispHstxVModeState* vmode)
 
 	// setup CLK_HSTX to PLL_SYS
 #if DISPHSTX_PICOSDK
-	clock_configure(clk_hstx, CLOCKS_CLK_SYS_CTRL_SRC_VALUE_CLKSRC_CLK_SYS_AUX, CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, vmode->vtime.sysclk*1000/clkdiv, vmode->vtime.sysclk*1000/clkdiv);
+	clock_configure(clk_hstx, 0, CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, vmode->vtime.sysclk*1000/clkdiv, vmode->vtime.sysclk*1000/clkdiv);
 #else
 	ClockSetup(CLK_HSTX, CLK_PLL_SYS, 0, 0);
 #endif
@@ -1098,7 +1098,7 @@ void DispHstxSelDispMode(int dispmode, sDispHstxVModeState* vmode)
 
 	// setup CLK_HSTX
 #if DISPHSTX_PICOSDK
-	clock_configure(clk_hstx, CLOCKS_CLK_SYS_CTRL_SRC_VALUE_CLKSRC_CLK_SYS_AUX, CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, vmode->vtime.sysclk*1000/clkdiv, vmode->vtime.sysclk*1000);
+	clock_configure(clk_hstx, 0, CLOCKS_CLK_PERI_CTRL_AUXSRC_VALUE_CLKSRC_PLL_SYS, vmode->vtime.sysclk*1000, vmode->vtime.sysclk*1000/clkdiv);
 #else
 	ClockSetup(CLK_HSTX, CLK_PLL_SYS, vmode->vtime.sysclk*1000/clkdiv, vmode->vtime.sysclk*1000);
 #endif

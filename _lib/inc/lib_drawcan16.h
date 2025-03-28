@@ -849,7 +849,7 @@ void DrawCan16Blit8(sDrawCan* can, int xd, int yd, const void* src, const u16* p
 void Draw16Blit8(int xd, int yd, const void* src, const u16* pal, u16 col, int xs, int ys, int w, int h, int wbs);
 
 // For backward compatibility with Draw version 1
-INLINE void DrawBlitPal(const u8* src, const u16* pal, int xs, int ys, int xd, int yd, int w, int h, int ws, u16 col) { Draw16Blit8(xd, ys, src, pal, col, xs, ys, w, h, Draw8Pitch(ws)); }
+INLINE void DrawBlitPal(const u8* src, const u16* pal, int xs, int ys, int xd, int yd, int w, int h, int ws, u16 col) { Draw16Blit8(xd, yd, src, pal, col, xs, ys, w, h, Draw8Pitch(ws)); }
 
 // Draw 6-bit palleted image transparent to 16-bit destination canvas
 void DrawCan16Blit6(sDrawCan* can, int xd, int yd, const void* src, const u16* pal, u16 col, int xs, int ys, int w, int h, int wbs);
